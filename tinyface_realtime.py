@@ -1,6 +1,8 @@
-#reads a sample video from webcam
-#runs the tinyface model on the sample video --> displays the tracked faces video in realtime 
-#writes the tracked faces video as 'video_tracked_tinyface_realtime.mp4'
+'''
+captures video from webcam
+runs the tinyface model on the sample video --> displays the tracked faces video in realtime 
+writes the tracked faces video as 'video_tracked_tinyface_realtime.mp4'
+'''
 
 #import libraries
 import torch
