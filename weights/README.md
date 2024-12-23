@@ -1,1 +1,1 @@
-Checkpoint obtained after training the model for 20 epoches.
+Checkpoint obtained after training the tinyface model for 20 epoches.
