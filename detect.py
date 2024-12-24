@@ -2,12 +2,10 @@
 Script to detect the faces using tinyface
 """
 
-import argparse
 import json
 
 import numpy as np
 import torch
-from PIL import Image, ImageDraw
 from torchvision import transforms
 
 from tinyfaces.evaluation import get_detections, get_model
