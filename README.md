@@ -1,14 +1,14 @@
 # Real-Time Face Detection using Tiny Faces in PyTorch
 
-This repository implements the [Tiny Faces in PyTorch](https://github.com/varunagrawal/tiny-faces-pytorch) framework, with the encoder architecture modified to use ResNet50 instead of ResNet101, for real-time face detection.
+This project implements a real-time face detection pipeline by using the TinyFaces PyTorch model from [Tiny Faces in PyTorch](https://github.com/varunagrawal/tiny-faces-pytorch). The original [facenet-pytorch face tracking pipeline](https://github.com/timesler/facenet-pytorch/blob/master/examples/face_tracking.ipynb) is modified and MTCNN is replaced with the TinyFaces PyTorch model. Key changes include using OpenCV (cv2) for video capture and substituting ResNet101 with ResNet50 as the encoder for training the TinyFaces model.
 
 ## Getting Started
+* Clone this repository.
+* Download the checkpoint obtained after training the tinyface model for 20 epoches, from [here](https://drive.google.com/drive/folders/1Z-NWrzt1nRNWnZzCdLl9VvpcacDYYTq2?usp=sharing) into the weights folder; such that:
+~~~
+$ ls weights/
+checkpoint_20.pth
+~~~
 * 
-* Download the [WIDER FACE](http://shuoyang1213.me/WIDERFACE/) dataset and unzip data and annotation files to data/widerface such that :
-~~~
-$ ls data/widerface
-wider_face_test.mat   wider_face_train.mat    wider_face_val.mat
-WIDER_test/           WIDER_train/            WIDER_val/
-~~~
 
 
